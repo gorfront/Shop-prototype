@@ -1,0 +1,138 @@
+
+.contactItem {
+    list-style: none;
+    position: relative;
+    top: 60px;
+    color: darkgreen;
+}
+
+.contactItem ul {
+    position: relative;
+}
+
+.contactItem li {
+    margin-block: 2px;
+    padding: 5px;
+    text-decoration: none;
+    position: relative;
+    
+}
+
+.contactItem li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+}
+
+.contactItem li span {
+    font-size: 1.4em;
+}
+
+.contactItem li iframe {
+    width: 450px;
+    height: 400px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .contactItem li {
+        padding: 10px;
+        left: 20px;
+    }
+
+    .contactItem li iframe{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+    .contactItem li {
+        padding: 10px;
+        left: 25px;
+    }
+
+    .contactItem li a {
+        text-decoration: none;
+        font-size: 1.1em;
+        color: black;
+    }
+
+    .contactItem li span {
+        font-size: 1.25em;
+    }
+
+    .contactItem li iframe{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .contactItem li {
+        padding: 10px;
+        left: 10px;
+    }
+
+    .contactItem li a {
+        text-decoration: none;
+        font-size: 1em;
+        color: black;
+    }
+
+    .contactItem li span {
+        font-size: 1.1em;
+    }
+
+    .contactItem li iframe{
+        width: 350px;
+        height: 350px;
+    }
+
+    .contactItem li:last-child {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 240px) and (max-width: 320px) {
+    .contactItem li {
+        padding: 10px;
+        left: 0px;
+    }
+
+    .contactItem li a {
+        text-decoration: none;
+        font-size: 0.9em;
+        color: black;
+    }
+
+    .contactItem li span {
+        font-size: 1em;
+    }
+
+    .contactItem li:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .contactItem li {
+        padding: 10px;
+        left: 0px;
+    }
+
+    .contactItem li a {
+        text-decoration: none;
+        font-size: 0.9em;
+        color: black;
+    }
+
+    .contactItem li span {
+        font-size: 1em;
+    }
+
+    .contactItem li:last-child {
+        display: none;
+    }
+}

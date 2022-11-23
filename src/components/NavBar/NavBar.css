@@ -1,0 +1,282 @@
+
+
+.menu ul li {
+    display: inline-block;
+    margin-block: 2px;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+    height: 30px;
+}
+
+.menu ul li::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+
+.menu ul li:hover::after {
+    transform: scaleX(1);
+}
+
+.menu ul li:nth-child(6)::after {
+    transform: scaleX(0);
+}
+
+.menu ul li:nth-child(7)::after {
+    transform: scaleX(0);
+}
+
+
+.navbar{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2em;
+}
+
+.logo {
+    margin-right: 50px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#toggle, .navbar label {
+    display: none;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #000;
+    margin-block: 10px;
+    border-radius: 4px;
+}
+
+.userIcon {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.userName::first-letter{
+    text-transform: uppercase;
+}
+
+/* .hamburger.active1 .line:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.active1 .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active1 .line:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+} */
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1305px) {
+
+    .logo img {
+        width: 130px;
+    }
+
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow-y: scroll;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggle:checked ~ .menu {
+        max-height: 100%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .logo img {
+        width: 150px;
+    }
+
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow-y: scroll;
+
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 2.5px;
+        margin-block: 8px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggle:checked ~ .menu {
+        max-height: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .logo img {
+        width: 120px;
+    }
+
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow-y: scroll;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hamburger .line {
+        width: 35px;
+        height: 3px;
+        margin-block: 6px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggle:checked ~ .menu {
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow-y: scroll;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hamburger .line {
+        width: 25px;
+        height: 2.5px;
+        margin-block: 5px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggle:checked ~ .menu {
+        max-height: 100%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 232px) {
+    .logo img {
+        max-width: 50px;
+    }
+
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow-y: scroll;
+        font-size: 0.7em;
+
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .hamburger .line {
+        width: 20px;
+        height: 2px;
+        margin-block: 3px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggle:checked ~ .menu {
+        max-height: 100%;
+    }
+}

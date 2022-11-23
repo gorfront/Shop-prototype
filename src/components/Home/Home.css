@@ -1,0 +1,246 @@
+
+
+.homeDiv {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    position: relative;
+    left: 10%;
+    top: 70px;    
+}
+
+.navigateDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navigateDiv h1 {
+    font-size: 7.3em;
+    font-weight: 540;
+}
+
+.navigateDiv p {
+    font-size: 2em;
+}
+
+.navigateDiv button {
+    width: 40%;
+    height: 70px;
+    border-radius: 30px;
+    border: none;
+    background-color: #1C69EC;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.imageDiv {
+    border-radius: 100px;
+    background-image: linear-gradient(to right, #1C69EC, #6BA1FD, #fff);
+    width: 1470px;
+    height: 105vh;
+    position: relative;
+    top: -40px;
+}
+
+.imageDiv img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 500px;
+    height: 100vh;
+    border-radius: 180px;
+}
+
+.imageDiv h3 {
+    width: 200px;
+    position: absolute;
+    left: 460px;
+    top: 50vh;
+    font-size: 1.3em;
+    transform: rotate(90deg) scale(-1);
+    color: rgb(230, 152, 165);
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1330px) {
+    .navigateDiv h1 {
+        font-size: 5.5em;
+        font-weight: 400;
+    }
+
+    .navigateDiv p {
+        font-size: 1.5em;
+    }
+    
+    .navigateDiv button {
+        width: 250px;
+        height: 55px;
+        font-size: 1.3em;
+    }
+
+    .imageDiv {
+        width: 1000px;
+        height: 105vh;
+       
+    }
+    
+    .imageDiv img {
+        width: 370px;
+        height: 95vh;
+    }
+    
+    .imageDiv h3 {
+        left: 320px;
+        top: 48vh;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .navigateDiv h1 {
+        font-size: 4.4em;
+        font-weight: 380;
+    }
+
+    .navigateDiv p {
+        font-size: 1.3em;
+    }
+    
+    .navigateDiv button {
+        width: 250px;
+        height: 55px;
+        font-size: 1.2em;
+    }
+
+    .imageDiv {
+        top: 0%;
+        width: 1100px;
+        height: 55vh;
+       
+    }
+    
+    .imageDiv img {
+        width: 270px;
+        height: 50vh;
+    }
+    
+    .imageDiv h3 {
+        left: 200px;
+        top: 22vh;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+    .homeDiv {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigateDiv h1 {
+        font-size: 3.4em;
+    }
+
+    .navigateDiv p {
+        font-size: 1.2em;
+    }
+    
+    .navigateDiv button {
+        width: 250px;
+        height: 55px;
+        font-size: 1.2em;
+    }
+
+    .imageDiv {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .homeDiv {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        top: 50px;
+    }
+
+    .navigateDiv h1 {
+        font-size: 3em;
+    }
+
+    .navigateDiv p {
+        font-size: 1.2em;
+    }
+    
+    .navigateDiv button {
+        width: 250px;
+        height: 55px;
+        font-size: 1.2em;
+    }
+
+    .imageDiv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 240px) and (max-width: 320px) {
+    .homeDiv {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        top: 40px;
+    }
+
+    .navigateDiv h1 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .navigateDiv p {
+        font-size: 1.1em;
+    }
+    
+    .navigateDiv button {
+        width: 150px;
+        height: 45px;
+        font-size: 1em;
+    }
+
+    .imageDiv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 239px) {
+    .homeDiv {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        top: 50px;
+    }
+
+    .navigateDiv h1 {
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    .navigateDiv p {
+        font-size: 1em;
+    }
+    
+    .navigateDiv button {
+        width: 130px;
+        height: 45px;
+        font-size: 1em;
+    }
+
+    .imageDiv {
+        display: none;
+    }
+}

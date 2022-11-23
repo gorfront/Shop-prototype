@@ -1,0 +1,39 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+
+.constactsTitle {
+    color: white;
+    position: relative;
+    top: 40px;
+    width: 400px;
+    padding: 8px 50px;
+    text-align: center;
+    font-size: 2em;
+    background-image: linear-gradient(to right, #1C69EC, #6BA1FD, #fff  );
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .constactsTitle {
+        display: none;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

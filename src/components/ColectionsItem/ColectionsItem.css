@@ -1,0 +1,174 @@
+
+.colectionItem {
+    width: 239px;
+    height: 350px;
+    background: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+    border: 1px solid ;
+}
+
+.colectionItem:hover {
+    transform: scale(.9);
+}
+
+.colectionItem:hover::after {
+    height: 280px;
+}
+
+.colectionItem:hover .con-text p{
+    margin-bottom: 0px;
+    opacity: 1;
+}
+
+.colectionItem:hover img {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.colectionItem:hover .ul {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.colectionItem::after {
+    width: 100%;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    z-index: 20;
+    transition: all .25s ease;
+}
+
+.colectionItem img {
+    height: 100%;
+    z-index: 10;
+    transition: all .25s ease;
+}
+
+.colectionItem .con-text {
+    z-index: 30;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.colectionItem .con-text p {
+    font-size: .8rem;
+    opacity: 0;
+    margin-bottom: -170px;
+    transition: all .25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.colectionItem .con-text p button {
+    padding: 7px 17px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid #fff;
+    margin-top: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all .25s ease;
+    font-size: .75rem;
+    outline: none;
+}
+
+.colectionItem .con-text p button a{
+    text-decoration: none;
+    color: white;
+}
+
+.colectionItem .con-text p button:hover {
+    background: #fff;
+    color: black;
+}
+
+.colectionItem .ul {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 40;
+    border-radius: 14px;
+    padding-left: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    top: 0;
+    opacity: 0;
+    transform: translate(100%);
+}
+
+.colectionItem .ul li {
+    background: #fff;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+}
+
+.colectionItem .ul:last-child {
+    border-radius: 0 0 12px 12px;
+}
+
+.colectionItem .ul.li:first-child {
+    border-radius: 12px 12px 0 0;
+}
+
+.colectionItem .ul li:hover {
+    opacity: 1;
+    transform: translate(-7px, -4px);
+    border-radius: 6px;
+}
+
+.colectionItem .ul li img {
+    font-size: 1.4rem;
+    color: #000;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .colectionItem {
+        top: 100px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .colectionTitle {
+        width: 200px;
+    }
+    .colectionItem {
+        width: 200px;
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .colectionItem {
+        top: 80px;
+        width: 200px;
+        height: 200px;
+    }
+}

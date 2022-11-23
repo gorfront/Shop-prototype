@@ -1,0 +1,210 @@
+
+label {
+    cursor: text;
+}
+
+.error {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-top: -20px;
+    padding-top: 0;
+    color: red;
+}
+
+.homeButton {
+    width: 100px;
+    height: 30px;
+    padding: 0 10px;
+    color: white;
+    background-color: rgb(150, 182, 209);
+    font-size: 1.3em;
+    position: relative;
+    top: 30px;
+    left: 50px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    cursor: pointer;
+}
+
+.logForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    width: 500px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: #30697A;
+}
+
+.logTitle {
+    color: #35322E;
+    padding: 20px 20px;
+    font-size: 2.5em;
+}
+
+.logForm input {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    outline: 2px solid white;
+    font-size: 1.2em;
+    margin: 15px;
+    border: none;
+    padding: 10px;
+}
+
+.placeholder {
+    font-size: 1em;
+    color: #99BEC6;
+    position: relative;
+    top: -53px;
+    left: -90px;
+    transform: translate(10px, 10px);
+    transition: transform .25s;
+}
+
+.login:focus + .placeholder,
+.login:not(:placeholder-shown) + .placeholder
+{
+    transform: translate(10px, -14px) scale(.8);
+    color: #159945;
+    padding-inline: 5px;
+    background-color: white;
+}
+
+.logPass:focus + .placeholder,
+.logPass:not(:placeholder-shown) + .placeholder {
+    transform: translate(10px, -14px) scale(.8);
+    color: #159945;
+    padding-inline: 5px;
+    background-color: white;
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    color: #F7F2E8;
+    font-size: 1.4em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.line {
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+
+.newAcc {
+    width: 260px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(84, 103, 137);
+    color: #F7F2E8;
+    font-size: 1.2em;
+    margin-top: 70px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .logForm {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .homeButton {
+        left: 20px;
+    }
+
+    .logForm {
+        width: 280px;
+        height: 480px;
+    }
+
+    .logForm input {
+        width: 240px;
+        height: 35px;
+    }
+
+    .btn {
+        width: 130px;
+        height: 40px;
+        
+    }
+
+    .newAcc {
+        width: 240px;
+        font-size: 1.1em;
+        margin-top: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .homeButton {
+        width: 80px;
+        height: 25px;
+        padding: 0 20px;
+        font-size: 1.1em;
+        top: 20px;
+        left: 25px;
+    }
+
+    .logForm {
+        width: 200px;
+        height: 400px;
+    }
+
+    .logTitle {
+        font-size: 1.5em;
+    }
+
+    .logForm input {
+        width: 160px;
+        height: 30px;
+    }
+
+    .placeholder {
+        font-size: 1em;
+        top: -52px;
+        left: -50px;
+    }
+    
+    .login:focus + .placeholder,
+    .login:not(:placeholder-shown) + .placeholder
+    {
+        transform: translate(6px, -11px) scale(.8);
+    }
+    
+    .logPass:focus + .placeholder,
+    .logPass:not(:placeholder-shown) + .placeholder {
+        transform: translate(6px, -11px) scale(.8);
+    }
+
+    .btn {
+        width: 120px;
+        height: 30px;
+        margin-top: 0;
+        font-size: 1.2em;
+    }
+
+    .newAcc {
+        width: 160px;
+        font-size: 0.8em;
+        margin-top: 30px;
+    }
+
+}

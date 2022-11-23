@@ -1,0 +1,290 @@
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+label {
+    cursor: text;
+}
+
+.error {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-top: -20px;
+    padding-top: 0;
+    color: red;
+}
+
+.homeButton {
+    width: 100px;
+    height: 30px;
+    padding: 0 10px;
+    color: white;
+    background-color: rgb(150, 182, 209);
+    font-size: 1.3em;
+    position: relative;
+    top: 30px;
+    left: 50px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    width: 600px;
+    height: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: #1EB1F7;
+}
+
+.form .title {
+    color: yellow;
+    padding: 20px 20px;
+    font-size: 2.5em;
+}
+
+.form input {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.2em;
+    margin: 15px;
+    border-top: none;
+    border-right: none;
+}
+
+.placeholderfirstname,
+.placeholderlastname,
+.placeholderusername,
+.placeholderphonenumber,
+.placeholderPass,
+.placeholderEmail,
+.placeholderConfPass {
+    font-size: 1em;
+    position: relative;
+    top: -53px;
+    left: -90px;
+    transform: translate(10px, 10px);
+    transition: transform .25s;
+}
+
+.placeholderfirstname:is(:focus, :valid) {
+    outline-color: #d1c5f6;
+}
+
+.placeholderlastname:is(:focus, :valid) {
+    outline-color: #d1c5f6;
+}
+
+.placeholderusername:is(:focus, :valid) {
+    outline-color: #d1c5f6;
+}
+
+.placeholderphonenumber :is(:focus, :valid) {
+    outline-color: #d1c5f6;
+}
+
+.placeholderPass:is(:focus, :valid) {
+    outline-color: #d1c5f6;
+}
+
+.placeholderEmail:is(:focus, :valid) {
+    outline-color: #d1c5f6;
+}
+
+.placeholderConfPass:is(:focus, :valid) {
+    outline-color: #d1c5f6;
+}
+
+.firstname:focus+.placeholderfirstname,
+.firstname:not(:placeholder-shown)+ .placeholderfirstname {
+    transform: translate(10px, -14px) scale(.8);
+    color: #159945;
+    padding-inline: 5px;
+    background-color: white;
+}
+
+.lastname:focus+.placeholderlastname,
+.lastname:not(:placeholder-shown)+ .placeholderlastname {
+    transform: translate(10px, -14px) scale(.8);
+    color: #159945;
+    padding-inline: 5px;
+    background-color: white;
+}
+
+.username:focus+.placeholderusername,
+.username:not(:placeholder-shown)+.placeholderusername {
+    transform: translate(10px, -14px) scale(.8);
+    color: #159945;
+    padding-inline: 5px;
+    background-color: white;
+}
+
+.phonenumber:focus+.placeholderphonenumber,
+.phonenumber:not(:placeholder-shown)+.placeholderphonenumber {
+    transform: translate(10px, -14px) scale(.8);
+    color: #159945;
+    padding-inline: 5px;
+    background-color: white;
+}
+
+.email:focus+.placeholderEmail,
+.email:not(:placeholder-shown)+.placeholderEmail {
+    transform: translate(10px, -14px) scale(.8);
+    color: #159945;
+    padding-inline: 5px;
+    background-color: white;
+}
+
+.pass:focus+.placeholderPass,
+.pass:not(:placeholder-shown)+.placeholderPass {
+    transform: translate(10px, -14px) scale(.8);
+    color: #159945;
+    padding-inline: 5px;
+    background-color: white;
+}
+
+.confPass:focus+.placeholderConfPass,
+.confPass:not(:placeholder-shown)+.placeholderConfPass {
+    transform: translate(10px, -14px) scale(.8);
+    color: #159945;
+    padding-inline: 5px;
+    background-color: white;
+}
+
+.form .btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 1.4em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .form {
+
+        width: 420px;
+        height: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        background-color: #1EB1F7;
+    }
+
+    .placeholderfirstname,
+    .placeholderlastname,
+    .placeholderusername,
+    .placeholderphonenumber,
+    .placeholderPass,
+    .placeholderEmail,
+    .placeholderConfPass {
+        top: -48px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .form {
+
+        width: 280px;
+        height: 730px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        background-color: #1EB1F7;
+    }
+
+    .form input {
+        width: 250px;
+        height: 40px;
+    }
+
+    .placeholderfirstname,
+    .placeholderlastname,
+    .placeholderusername,
+    .placeholderphonenumber,
+    .placeholderPass,
+    .placeholderEmail,
+    .placeholderConfPass {
+        top: -52px;
+        left: -65px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form {
+        width: 210px;
+        height: 600px;
+    }
+
+    .form .title {
+        font-size: 1.5em;
+    }
+
+    .form input {
+        width: 160px;
+        height: 30px;
+        font-size: 1em;
+    }
+
+    .placeholderfirstname,
+    .placeholderlastname,
+    .placeholderusername,
+    .placeholderphonenumber,
+    .placeholderPass,
+    .placeholderEmail,
+    .placeholderConfPass {
+        font-size: .8em;
+        top: -47px;
+        left: -35px;
+    }
+
+    .username:focus+.placeholderusername,
+    .username:not(:placeholder-shown)+.placeholderusername {
+        transform: translate(10px, -7px) scale(.8);
+
+    }
+
+
+
+    .email:focus+.placeholderEmail,
+    .email:not(:placeholder-shown)+.placeholderEmail {
+        transform: translate(10px, -7px) scale(.8);
+
+    }
+
+    .pass:focus+.placeholderPass,
+    .pass:not(:placeholder-shown)+.placeholderPass {
+        transform: translate(10px, -7px) scale(.8);
+
+    }
+
+    .confPass:focus+.placeholderConfPass,
+    .confPass:not(:placeholder-shown)+.placeholderConfPass {
+        transform: translate(10px, -7px) scale(.8);
+
+    }
+
+    .form .btn {
+        width: 120px;
+        height: 40px;
+        font-size: 1.1em;
+        margin-top: 10px;
+    }
+
+}

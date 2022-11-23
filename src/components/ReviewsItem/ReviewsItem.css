@@ -1,0 +1,33 @@
+
+.reviewItem {
+    width: 560px;
+    height: 220px;
+    position: relative;
+    top: 10px;
+    left: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviewItem img {
+    width: 210px;
+    height: 190px;
+    border-radius: 50%;
+}
+
+.reviewItem p {
+    color: black;
+    width: 60%;
+    position: absolute;
+    left: 220px;
+    top: 30px;
+}
+
+.reviewItem h3 {
+    color: black;
+    position: absolute;
+    left: 83%;
+    top: 190px;
+}
